@@ -1,4 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/* TO DO
+ * Checar posición repetida
+ * Mejorar dibujo del mapa
+*/
+
+
+
+
+// See https://aka.ms/new-console-template for more information
 string[,] tablero = { { "1", "2", "3" }, { "4", "5", "6" }, { "7", "8", "9" } };
 bool esTurnoCirculo = true;
 IniciaJuego();
@@ -136,6 +144,7 @@ void CambiaSeñalTablero(int posicionTablero)
 
 void DibujaTablero()
 {
+    Console.Clear();
     string marcadorTablero = "";
     int lenght = tablero.Length;
     for (int fila = 1; fila <= 9; fila++)
